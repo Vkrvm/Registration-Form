@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pop-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+
+    <div class="sub-title">
+        <h1 class="header">Registration Form</h1>
+    </div>
+
+    <form class="row g-3 needs-validation" novalidate id="form">
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Birthdate</label>
+            <input type="date" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Gender</label><br>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="validationCustom01" required>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Male
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="validationCustom01" required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Email</label>
+            <input type="email" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password1" required>
+            <div class="invalid-feedback">
+                <div id="passwordError"></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Re-Enter Password</label>
+            <input type="password" class="form-control" id="password2" required>
+            <div class="invalid-feedback" id="passwordMismatchError">
+                Passwords do not match.
+            </div>
+            <div class="valid-feedback" id="passwordValidFeedback">
+
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Address</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required onclick="toggleTerms()">
+                <label class="form-check-label" for="invalidCheck">
+                    I agree to the terms and conditions
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+
+    </form>
+    <div id="termsOverlay" class="overlay-box">
+        <div class="overlay-content">
+            <!-- Your terms and conditions content goes here -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet laudantium ipsum, aliquam sequi iusto non sint minus adipisci, architecto quibusdam perspiciatis hic accusamus ullam repellendus culpa beatae quod officiis et?</p>
+            <button onclick="hideTermsOverlay()"><img src="assets/18072616501553668386-32.png" alt="Close" /></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/pop-up.js"></script>
+    <script src="js/passowrd.js"></script>
+
+</body>
+
+</html>
